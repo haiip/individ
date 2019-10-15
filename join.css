@@ -1,0 +1,40 @@
+*{
+
+margin: 0;
+box-sizing: border-box;
+padding: 0;
+
+}
+
+body{
+
+height: 100vh;
+display: flex;
+background-color: orange;
+transition: background 0.5s ease;
+position: relative;
+
+}
+
+.field-name {
+
+position: absolute;
+
+}
+
+.field-email {
+
+
+}
+
+
+.field-password {
+
+
+}
+
+.field-finish {
+
+
+
+}
