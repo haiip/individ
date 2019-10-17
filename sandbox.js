@@ -82,9 +82,9 @@ animatedForm();
 
 
 
-// var media = document.getElementById("myvideo");
-// const playPromise = media.play();
-// if (playPromise !== null) {
-//   playPromise.catch(() => { media.play(); })
-// }
+var media = document.getElementById("myvideo");
+const playPromise = media.play();
+if (playPromise !== null) {
+  playPromise.catch(() => { media.play(); })
+}
 
