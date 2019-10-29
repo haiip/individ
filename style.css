@@ -2,7 +2,6 @@ body, ul, li, h1, h2, a{
 margin: 0;
 padding: 0;
 font-family: Arial, Helvetica, sans-serif;
-
 }
 
 
@@ -21,98 +20,82 @@ left: 0;
 header h1{
 color: white;
 border: 8px solid white;
-padding: 6px 12px;
+padding: 6px 12px; 
 display: inline-block;
 border-radius: 36px;
-box-shadow: 0px 2px 20px black
+box-shadow: 0px 2px 20px black;
+
 }
 
 .banner {
 width: 100%;
-flex-basis: 50%
+flex-basis: 100%
 }
 
-.video-content {
+.image-content {
 background-color:orange;
 position: relative;
-
+width: 1090;
+height: 100%;
+object-fit: contain;
 }
 
-video {
-max-width: 100%;
-height: auto;
+#images li {
+  list-style-type: none;
 }
 
 .banner .welcome{
-background-color: transparent;
-color: whitesmoke;
-text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
-position: absolute;
-left: 0px;
-top: 30%; 
+  background-color: transparent;
+  color: whitesmoke;
+  text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
+  position: absolute;
+  left: 0px;
+  top: 30%; 
 }
 
 .banner h2 {
 
-    font-size: 90px;
-    font-family: 'Liu Jian Mao Cao', cursive;
-
+  font-size: 90px;
+  font-family: 'Liu Jian Mao Cao', cursive;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .banner h1 {
 
-font-size: 90px;
-font-family: 'Liu Jian Mao Cao', cursive;
-
-
+  font-size: 90px;
+  font-family: 'Liu Jian Mao Cao', cursive;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 nav{
-background-color:orange;
-margin: 0 auto;
-padding: 40px;   
-position: sticky; 
-top: 100px; 
-box-shadow: 0px 2px 0px lightgray;
-
+  background-color:orange;
+  margin: 0 auto;
+  padding: 40px;   
+  position: sticky; 
+  top: 100px; 
+  box-shadow: 0px 2px 0px lightgray;
 }
 
 .nav_items {
-
-display:flex;
-
+  display:flex;
 }
 
-@media only screen and (max-width: 768px) {
-  .Navbar__Items,
-  .Navbar {
-    flex-direction: column;
-  }
-  .Navbar__Items--right {
-    margin-left: 0;
-  }
+.hej{
+  width: 30%;
+  display: flex;
+  align-content: center;
 }
 
 
-
-
-@media only screen and (max-width: 768px) {
-  .Navbar__Items,
-  .Navbar {
-    flex-direction: column;
-  }
-  .Navbar__Items {
-    display:none;
-  }
-  .Navbar__Items--right {
-    margin-left:0;
-  }
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
 }
-
-
-
-
-
 
 
 nav li{
@@ -144,10 +127,10 @@ nav ul li a {
     text-transform: uppercase;
     margin: 0 10px;
 }
-    nav ul li a,
+nav ul li a, {
 nav ul li a:after,
-nav ul li a:before {
-  transition: all .5s;
+nav ul li a:before 
+transistion: all .5s;
 }
 nav ul li a:hover {
   color: orange;
@@ -157,11 +140,11 @@ nav ul li a:hover {
 
 
 main{
-    max-width: 100%;
-    width: 1200px; 
-margin: 80px auto; 
-padding: 0 40px;
-box-sizing: border-box;
+  max-width: 100%;
+  width: 1200px; 
+  margin: 80px auto; 
+  padding: 0 40px;
+  box-sizing: border-box;
 }
 
 
@@ -193,19 +176,22 @@ height: auto;
     }
 }
 
-/*  */
-
 #aFoot  {
 
 
 animation: 3s slidein-left;
+display: flex;
+align-items: center;
+justify-content: center;
 
 }
 
 #youLeave  {
 
 animation: 3s slidein-right;
-
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 
@@ -288,9 +274,10 @@ input, button
     color: darkolivegreen;
     font-family: Nunito;
     padding: 0;
-    margin: 0;
+    margin: 100;
     border: 0;
     background-color: transparent;
+    
 }
 
 #cover
@@ -466,18 +453,18 @@ ul
 
 #cover
 {
-    position: absolute;
-    top: 60%;
+    /* position: absolute; */
+    top: 100%;
     left: 100;
     right: 0;
-    width: 80%;
+    width: 105%;
     padding: 10px;
-    margin: -30px auto 0 auto;
+    margin: -40px auto 0 auto;
     top: 10%;
     left: 0%;
     right: 0%;
     display: flex;
-    flex-direction: column;
+    flex-direction: inherit;
     flex-wrap: wrap;
     background-color: white;
     border-radius: 20px;
@@ -514,6 +501,64 @@ ul
   }
 }
 
+nav.circle ul li a {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+nav.circle ul li a:after {
+  display: block;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '.';
+  color: transparent;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background: transparent;
+}
+nav.circle ul li a:hover:after {
+  -webkit-animation: circle 1.0s ease-in forwards;
+}
+
+.banner h2 {
+
+  font-size: 50px;
+  font-family: 'Liu Jian Mao Cao', cursive;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.banner h1 {
+
+  font-size: 50px;
+  font-family: 'Liu Jian Mao Cao', cursive;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.tb
+{
+  
+position: absolute;
+}
+
+
+input, button
+{
+    color: darkolivegreen;
+    font-family: Nunito;
+    padding: 0;
+    margin: 100;
+    border: 0;
+    background-color: transparent;
+    
+}
 
 
 
