@@ -1,107 +1,90 @@
 * {
-
-margin: 0;
-box-sizing: border-box;
-padding: 0;
-
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
 }
 
 body {
-
-height: 100vh;
-display: flex;
-background-color: orange;
-transition: background 0.5s ease;
-position: relative;
-
+	height: 100vh;
+	display: flex;
+	background-color: orange;
+	transition: background 0.5s ease;
+	position: relative;
 }
 
 header {
-background-color: transparent;
-padding: 20px;
-text-align: center;
-position: fixed;
-width: 100%;
-z-index: 1;
-top: 0;
-left: 0; 
+	background-color: transparent;
+	padding: 20px;
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	top: 0;
+	left: 0;
 }
 
 header h1{
-color: white;
-border: 8px solid white;
-padding: 6px 12px;
-display: inline-block;
-border-radius: 36px;
-box-shadow: 0px 2px 20px black
+	color: white;
+	border: 8px solid white;
+	padding: 6px 12px;
+	display: inline-block;
+	border-radius: 36px;
+	box-shadow: 0px 2px 20px black
 }
 
 
-.field-name, 
-.field-email, 
-.field-password, 
-.field-finish {
-
-position: absolute;
-top: 50%;
-left: 50%; 
-transform: translate(-50%, -50%);
-background: white;
-height: 50px;
-width: 400px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-border-radius: 5px;
-transition: all 0.5s ease;
+.field-name, .field-email, .field-password, .field-finish {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: white;
+	height: 50px;
+	width: 400px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 5px;
+	transition: all 0.5s ease;
 }
 
-.field-name i, 
-.field-email i, 
-.field-password i, 
-.field-finish i {
- padding: 10px;
-cursor: pointer;
+.field-name i, .field-email i, .field-password i, .field-finish i {
+	padding: 10px;
+	cursor: pointer;
 }
 
-
-.field-name input,
-.field-email input,
-.field-password input {
-background: none;
-border: none;
-flex: 1;
-height: 100%;
-outline: none;
-
+.field-name input, .field-email input, .field-password input {
+	background: none;
+	border: none;
+	flex: 1;
+	height: 100%;
+	outline: none;
 }
 
-
-
-div.innactive{
-    opacity: 0;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
+div.innactive {
+	opacity: 0;
+	pointer-events: none;
+	transform: translate(-50%, -50%);
 }
 
-div.active{
-opacity: 1;
-pointer-events: all;
-transform: translate(-50%, -50%);
-
+div.active {
+	opacity: 1;
+	pointer-events: all;
+	transform: translate(-50%, -50%);
 }
 
-@keyframes shake{
-0%{
-transform: translate(-50%, -50%) rotate(0deg);
-}
-50%{
-    transform: translate(-50%, -50%) rotate(10deg);
+@keyframes shake {
+
+	0% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+
+	50% {
+		transform: translate(-50%, -50%) rotate(10deg);
+	}
+
+	100% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
 
 }
-100%{
-transform: translate(-50%, -50%) rotate(0deg);
-}
-}
-
-
