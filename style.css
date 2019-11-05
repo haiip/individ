@@ -35,7 +35,6 @@ flex-basis: 100%
 .image-content {
 background-color:orange;
 position: relative;
-width: 1090;
 height: 100%;
 object-fit: contain;
 }
@@ -106,8 +105,7 @@ nav li{
 
 nav ul li {
     display: inline-block;
-  list-style: none;
-  padding: 1;
+    list-style: none;
   }
 
 nav li a{
@@ -127,11 +125,7 @@ nav ul li a {
     text-transform: uppercase;
     margin: 0 10px;
 }
-nav ul li a, {
-nav ul li a:after,
-nav ul li a:before 
-transistion: all .5s;
-}
+
 nav ul li a:hover {
   color: orange;
   border-radius: 36px;
@@ -273,8 +267,6 @@ input, button
 {
     color: darkolivegreen;
     font-family: Nunito;
-    padding: 0;
-    margin: 100;
     border: 0;
     background-color: transparent;
     
@@ -284,8 +276,6 @@ input, button
 {
     position: absolute;
     top: 60%;
-    left: 100;
-    right: 0;
     width: 550px;
     padding: 35px;
     margin: -83px auto 0 auto;
@@ -455,8 +445,6 @@ ul
 {
     /* position: absolute; */
     top: 100%;
-    left: 100;
-    right: 0;
     width: 105%;
     padding: 10px;
     margin: -40px auto 0 auto;
@@ -553,18 +541,8 @@ input, button
 {
     color: darkolivegreen;
     font-family: Nunito;
-    padding: 0;
-    margin: 100;
-    border: 0;
     background-color: transparent;
     
 }
-
-
-
-
-
-
-
 }
 
